@@ -121,7 +121,7 @@ public class ContributionChecker {
         }
     }
 
-    public static void run() {
+    public static void run() throws IOException {
         //setFileToCheck();
         pBuilder.command("cmd.exe", "/c", "git blame README.md");
         Process process = pBuilder.start();
